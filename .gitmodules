@@ -1,0 +1,12 @@
+[submodule "pmod-net"]
+	path = pmod-net
+	url = https://github.com/shikishima-TasakiLab/pmod-net.git
+[submodule "h5_kitti360"]
+	path = h5_kitti360
+	url = https://github.com/shikishima-TasakiLab/h5_kitti360.git
+[submodule "pmod-ros1"]
+	path = pmod-ros1
+	url = https://github.com/shikishima-TasakiLab/pmod-ros1.git
+[submodule "pointsmap_renderer"]
+	path = pointsmap_renderer
+	url = https://github.com/shikishima-TasakiLab/pointsmap_renderer.git
