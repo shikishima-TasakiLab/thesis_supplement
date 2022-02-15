@@ -23,8 +23,33 @@
 git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.git
 ```
 
-## PMOD-Netの学習方法
+## PMOD-NetによるCross-Validation
 
-1. データセットをHDF5に変換する. KITTI-360データセットを用いる場合は, [h5_kitti360](./h5_kitti360)で変換できる.
+1. "[./pmod-net/](./pmod-net)"内に"[./scripts/pmod-net/Cross-Validation.sh](./scripts/pmod-net/Cross-Validation.sh)"をコピーする.
 
-1. `pmod-net`
+1. "[./pmod-net/README.md](./pmod-net/README.md)"の記述に従い, Dockerコンテナの起動まで行う.
+
+1. コピーした`Cross-Validation.sh`を実行してCross-Validationのための学習を行う.
+
+1. 評価は, 番号の最も大きいチェックポイントを使用し, タグに記載されたシーケンスのデータで行う.
+
+## ACMNetによるCross-Validation
+
+1. "[./ACMNet/docker/build.sh](./ACMNet/docker/build.sh)"を実行し, Dockerイメージを作成する.
+
+1. "[./ACMNet/docker/run.sh](./ACMNet/docker/run.sh)"でDockerコンテナを起動する.
+
+    ```bash
+    ./docker/run.sh -d path/of/the/dataset/dir
+    ```
+    ```
+    Usage: run.sh [OPTIONS...]
+    OPTIONS:
+        -h, --help          Show this help
+        -i, --gpu-id ID     Specify the ID of the GPU
+        -d, --dataset-dir   Specify the directory where datasets are stored
+    ```
+
+1. `run_train.sh`を実行してCross-Validationのための学習を行う.
+
+1. 評価は`run_eval.sh`を参考にして行う. チェックポイントは`latest`のついたものを, データセットはタグに記載されたシーケンスを用いる.

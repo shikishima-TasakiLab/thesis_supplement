@@ -10,3 +10,6 @@
 [submodule "pointsmap_renderer"]
 	path = pointsmap_renderer
 	url = https://github.com/shikishima-TasakiLab/pointsmap_renderer.git
+[submodule "ACMNet"]
+	path = ACMNet
+	url = https://github.com/shikishima-TasakiLab/ACMNet.git
