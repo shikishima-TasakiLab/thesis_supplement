@@ -25,7 +25,7 @@ git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.
 
 ## PMOD-NetのCross-Validation
 
-1. "[./pmod-net/](./pmod-net)"内に"[./scripts/pmod-net/Cross-Validation.sh](./scripts/pmod-net/Cross-Validation.sh)"をコピーする.
+1. `./pmod-net/`内に"[./scripts/pmod-net/Cross-Validation.sh](./scripts/pmod-net/Cross-Validation.sh)"をコピーする.
 
 1. "[./pmod-net/README.md](./pmod-net/README.md)"の記述に従い, Dockerコンテナの起動まで行う.
 
@@ -50,13 +50,13 @@ git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.
         -d, --dataset-dir   Specify the directory where datasets are stored
     ```
 
-1. `run_train.sh`を実行してCross-Validationのための学習を行う.
+1. "[run_train.sh](./ACMNet/run_train.sh)"を実行してCross-Validationのための学習を行う.
 
-1. 評価は`run_eval.sh`を参考にして行う. チェックポイントは`latest`のついたものを, データセットはタグに記載されたシーケンスを用いる.
+1. 評価は"[run_eval.sh](./ACMNet/run_eval.sh)"を参考にして行う. チェックポイントは`latest`のついたものを, データセットはタグに記載されたシーケンスを用いる.
 
 ## DeepLab-v3のCross-Validation
 
-1. "[./deeplab_v3/](./deeplab_v3)"内に"[./scripts/deeplab_v3/Cross-Validation.sh](./scripts/deeplab_v3/Cross-Validation.sh)"をコピーする.
+1. `./deeplab_v3/`内に"[./scripts/deeplab_v3/Cross-Validation.sh](./scripts/deeplab_v3/Cross-Validation.sh)"をコピーする.
 
 1. "[./deeplab_v3/README.md](./deeplab_v3/README.md)"の記述に従い, Dockerコンテナの起動まで行う.
 
