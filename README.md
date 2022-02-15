@@ -23,7 +23,7 @@
 git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.git
 ```
 
-## PMOD-NetによるCross-Validation
+## PMOD-NetのCross-Validation
 
 1. "[./pmod-net/](./pmod-net)"内に"[./scripts/pmod-net/Cross-Validation.sh](./scripts/pmod-net/Cross-Validation.sh)"をコピーする.
 
@@ -33,7 +33,7 @@ git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.
 
 1. 評価は, 番号の最も大きいチェックポイントを使用し, タグに記載されたシーケンスのデータで行う.
 
-## ACMNetによるCross-Validation
+## ACMNetのCross-Validation
 
 1. "[./ACMNet/docker/build.sh](./ACMNet/docker/build.sh)"を実行し, Dockerイメージを作成する.
 
@@ -53,3 +53,13 @@ git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.
 1. `run_train.sh`を実行してCross-Validationのための学習を行う.
 
 1. 評価は`run_eval.sh`を参考にして行う. チェックポイントは`latest`のついたものを, データセットはタグに記載されたシーケンスを用いる.
+
+## DeepLab-v3のCross-Validation
+
+1. "[./deeplab_v3/](./deeplab_v3)"内に"[./scripts/deeplab_v3/Cross-Validation.sh](./scripts/deeplab_v3/Cross-Validation.sh)"をコピーする.
+
+1. "[./deeplab_v3/README.md](./deeplab_v3/README.md)"の記述に従い, Dockerコンテナの起動まで行う.
+
+1. コピーした`Cross-Validation.sh`を実行してCross-Validationのための学習を行う.
+
+1. 評価は, 番号の最も大きいチェックポイントを使用し, タグに記載されたシーケンスのデータで行う.
