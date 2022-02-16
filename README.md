@@ -68,7 +68,7 @@ git clone --recursive https://github.com/shikishima-TasakiLab/thesis_supplement.
 
 1. 走行する環境の三次元点群地図をあらかじめ用意する．用意した三次元点群地図から，地面や動的障害物を除去したものを作成し，`./pmod-ros1/maps/`に保存する．
 
-1. 学習したモデルをTorch Script Modelに変換しておく. 変換したTorch Script Modelは`./pmod-ros1/model/`に保存する.
+1. [学習したモデルをTorch Script Modelに変換](https://github.com/shikishima-TasakiLab/pmod-net/blob/main/README.md#checkpoint-pth--torch-script-model-pt)しておく. 変換したTorch Script Modelは`./pmod-ros1/model/`に保存する.
 
 1. "[./pointsmap_renderer/README.md](https://github.com/shikishima-TasakiLab/pointsmap_renderer/blob/main/README.md)"に従って点群を投影するノードを起動する. Autowareを搭載したロボットとは別のサーバーで実行する際は, `ROS_MASTER_URI=http://[IPアドレス or ホスト名]:11311 `を`roslaunch`コマンドの前に付ける.
 
