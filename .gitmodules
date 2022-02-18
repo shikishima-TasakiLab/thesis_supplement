@@ -16,3 +16,6 @@
 [submodule "deeplab_v3"]
 	path = deeplab_v3
 	url = https://github.com/shikishima-TasakiLab/deeplab_v3.git
+[submodule "pmod-ros2"]
+	path = pmod-ros2
+	url = https://github.com/shikishima-TasakiLab/pmod-ros2.git
