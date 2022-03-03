@@ -19,3 +19,6 @@
 [submodule "pmod-ros2"]
 	path = pmod-ros2
 	url = https://github.com/shikishima-TasakiLab/pmod-ros2.git
+[submodule "pointsmap_renderer2"]
+	path = pointsmap_renderer2
+	url = https://github.com/shikishima-TasakiLab/pointsmap_renderer2.git
